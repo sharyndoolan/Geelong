@@ -1,0 +1,30 @@
+[
+  {
+    "number": 1,
+    "name": "Rhys Stanley",
+    "games": 204,
+    "age": 33,
+    "height": 200,
+    "weight": 102,
+    "origin": "West Adelaide",
+    "position": "Ruck",
+    "goals": 105,
+    "behinds": 81,
+    "img": "https://s.afl.com.au/staticfile/AFL%20Tenant/AFL/Players/ChampIDImages/AFL/2024014/280317.png?im=Scale,width=0.6,height=0.6",
+    "img2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEht1SL8D09KP5OCBe9YX797C5ztOYpO04w&s"
+  },
+  {
+    "number": 2,
+    "name": "Zach Tuohy",
+    "games": 284,
+    "age": 34,
+    "height": 187,
+    "weight": 94,
+    "origin": "County Laois, Ireland",
+    "position": "Midfield",
+    "goals": 100,
+    "behinds": 81,
+    "img": "https://s.afl.com.au/staticfile/AFL%20Tenant/AFL/Players/ChampIDImages/AFL/2024014/292511.png?im=Scale,width=0.6,height=0.6",
+    "img2": "https://content.api.news/v3/images/bin/771e1354102730065a157a41b265e4ad"
+  }
+]
