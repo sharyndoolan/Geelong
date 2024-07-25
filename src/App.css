@@ -10,6 +10,8 @@ div {
 }
 
 img {
+  grid-column: 1/5;
+  grid-row: 2/5;
   height: auto;
   width: 21vw;
   border: 5px solid black;
@@ -18,8 +20,9 @@ img {
   background-color: white;
 }
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr 1fr;
   align-items: center;
   justify-content: space-around;
   background-color: rgb(34, 45, 75);
@@ -29,4 +32,43 @@ img {
   border-radius: 10px;
   margin: 20px;
   color: #fff;
+}
+.number {
+  grid-column: 1/1;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.name {
+  grid-column: 2/5;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  grid-column: 2/3;
+  grid-row: 6/6;
+
+  justify-content: center;
+}
+
+.age {
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  justify-content: end;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.games {
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  justify-content: end;
+  font-size: 20px;
+  font-weight: bold;
 }
