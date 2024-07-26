@@ -1,24 +1,29 @@
 import StatsButton from './StatsButton'
 import BioButton from './BioButton'
+import Head from './Header'
 
 const Players = (props) => {
   return (
-    <div class="card">
-      <div class="number">
+    <div className="card">
+      <div className="number">
         <p>{props.player.number}</p>
       </div>
-      <div class="name">
+      <div className="name">
         <p>{props.player.name}</p>
       </div>
       <img src={props.player.img} alt="Image" />
-      <div class="age">
+      <div className="age">
         <p>Age: {props.player.age}</p>
       </div>
-      <div class="games">
+      <div className="games">
         <p>Games: {props.player.games}</p>
       </div>
-      <StatsButton />
-      <BioButton />
+      <div className="stats">
+        <StatsButton />
+      </div>
+      <div className="bio">
+        <BioButton />
+      </div>
     </div>
   )
 }
