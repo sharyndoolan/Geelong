@@ -8,7 +8,7 @@ const Header = () => {
       />
 
       <h2>The Geelong Football Club</h2>
-      <p>
+      <p className="history">
         It is believed that the co-founder of Australian football, Thomas
         Wentworth Wills, recommended the formation of the Geelong Football Club
         in July 1859 making it the second oldest continuously existing club at

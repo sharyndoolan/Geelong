@@ -19,7 +19,9 @@ const Players = (props) => {
         <div className="name">
           <p>{props.player.name}</p>
         </div>
-        <img src={props.player.img} alt="Image" />
+
+        <img className="image" src={props.player.img} alt="Image" />
+        <img className="overlay" src={props.player.img2} alt="Image2" />
         <div className="age">
           <p>Age: {props.player.age}</p>
         </div>
@@ -29,9 +31,9 @@ const Players = (props) => {
         <div className="stats">
           <StatsButton setStats={setStats} stats={stats} />
           {stats ? (
-            <p>
-              Height: {props.player.height} <br />
-              Weight: {props.player.weight} <br />
+            <p className="statlines">
+              Height: {props.player.height} cm <br />
+              Weight: {props.player.weight} kg <br />
               Origin: {props.player.origin} <br />
               Goals: {props.player.goals} <br />
               Behinds: {props.player.behinds} <br />
