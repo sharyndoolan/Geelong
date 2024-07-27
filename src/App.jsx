@@ -7,7 +7,7 @@ const App = () => {
   console.log(data)
   return (
     <div>
-      <div className="header">
+      <div>
         <Header />
       </div>
       {data.map((player, index) => (
