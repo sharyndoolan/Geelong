@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 const Players = (props) => {
   const [bio, setBio] = useState(false)
+  const [stats, setStats] = useState(false)
 
   return (
     <div className="page">
@@ -26,7 +27,16 @@ const Players = (props) => {
           <p>Games: {props.player.games}</p>
         </div>
         <div className="stats">
-          <StatsButton />
+          <StatsButton setStats={setStats} stats={stats} />
+          {stats ? (
+            <p>
+              Height: {props.player.height} <br />
+              Weight: {props.player.weight} <br />
+              Origin: {props.player.origin} <br />
+              Goals: {props.player.goals} <br />
+              Behinds: {props.player.behinds} <br />
+            </p>
+          ) : null}
         </div>
         <div className="bio">
           <BioButton setBio={setBio} bio={bio} />
