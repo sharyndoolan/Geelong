@@ -21,7 +21,7 @@ const Players = (props) => {
         </div>
 
         <img className="image" src={props.player.img} alt="Image" />
-        <img className="overlay" src={props.player.img2} alt="Image2" />
+
         <div className="age">
           <p>Age: {props.player.age}</p>
         </div>
