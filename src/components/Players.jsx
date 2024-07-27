@@ -1,12 +1,11 @@
 import StatsButton from './StatsButton'
 import BioButton from './BioButton'
-import AltImage from './AltImage'
+
 import { useState } from 'react'
 
 const Players = (props) => {
   const [bio, setBio] = useState(false)
   const [stats, setStats] = useState(false)
-  const [img2, setImg] = useImg(false)
 
   return (
     <div className="page">
@@ -19,10 +18,7 @@ const Players = (props) => {
         </div>
 
         <img className="image" src={props.player.img} alt="Image" />
-        <div className="image2">
-          <AltImage setImg={setImg} img2={img2} />
-          {img2 ? <p>{props.player.img2}</p> : null}
-        </div>
+
         <div className="age">
           <p>Age: {props.player.age}</p>
         </div>
